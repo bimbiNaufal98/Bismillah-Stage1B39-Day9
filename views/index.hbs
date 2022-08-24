@@ -39,19 +39,14 @@
         <div class="skill-container1">
             <div class="skill-container2">
                 <div class="skill-container2-3">
-                    <p style="
-                            margin-left: 22px; margin-right: 50px; text-align: justify; font-size: 16px; font-family: 'Segoe UI';">
-                        <b>ٱلسَّلَامُ عَلَيْكُمْ وَرَحْمَةُ ٱللَّٰهِ وَبَرَكَاتُهُ</b>
-                    </p>
-                    <h1
-                        style="color: rgb(0, 0, 0); font-weight: bold; text-align: left; padding-left: 19px; padding-right: 10px; margin-bottom: 0px; margin-top: 0px;">
-                        Hi! Welcome to my hut</h1>
-                    <p style="text-align: justify; padding-left: 20px; padding-right: 20px; margin-top: 15px; margin-bottom: 30px;">
+                    <h1 class="glow"
+                        style="color: rgb(0, 0, 0); font-weight: bold; text-align: left; padding-left: 19px; padding-right: 10px; margin-bottom: 25px; margin-top: 0px;">
+                        Hi! Welcome to my personal web ~</h1>
+                    <p style="text-align: justify; padding-left: 20px; padding-right: 20px; margin-top: 15px; margin-bottom: 40px;">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quibusdam maxime iure
                         sapiente magnam natus odio voluptatum magni quae accusamus, odit ratione nam perspiciatis
-                        rerum dicta atque voluptatibus dolore pariatur. Lorem, ipsum dolor sit amet consectetur
-                        adipisicing elit. Esse ipsam quibusdam tenetur similique eveniet non facere natus explicabo
-                        voluptatum amet omnis nihil dolores, dicta aliquid adipisci, culpa minus fugiat tempora.
+                        rerum dicta atque voluptatibus dolore pariatur. Lorem ipsum dolor sit amet consectetur
+                        Cupiditate dolore, dolor ipsum cumque quam sit incidunt voluptatum omnis laborum....
                     </p>
                     <div class="kanan-kiri">
                         <div>
@@ -117,14 +112,17 @@
         <h2 style="text-align: center; margin-top: 55px; padding-top: 40px; padding-bottom: 50px;">"My Project"</h2>
             <div class="blog-detail-satu">
                 {{#each dataBlog}}
+                <a href="/myproject-detail/{{@index}}" title="Read more" target="_blank" class="text-decoration-none">
                 <div class="blog-detail-container-satu">
                     <div style="width: 350px; height: 300px; overflow: hidden; position: relative; margin: 15px; border-radius: 10px;">
                         <img src="/Assets/image/gambar 6.jpg" style="max-width: 100%; position: absolute;">
                     </div>
-                    <div>
-                        <p id="input-project-name" style="margin-top: 10px; margin-left: 13px; margin-bottom: 2px; font-size: 25px; font-family: 'Segoe UI'; font-weight: bold;"><a href="/myproject-detail/{{@index}}" title="Read more" target="_blank" class="text-decoration-none"><span style="color:black;">{{this.name}}</span></a></p>
+                    {{!-- // display element hover di w3schools --}}
+                    <div class="myDIV"> 
+                        <p id="input-project-name" style="margin-top: 10px; margin-left: 13px; margin-bottom: 0px; font-size: 25px; font-family: 'Segoe UI'; font-weight: bold;"><a href="/myproject-detail/{{@index}}" target="_blank" class="text-decoration-none"><span style="color:black;">{{this.name}}</span></a></p>
                     </div>
-                    <div class="durasi" style="margin-top: 2px; margin-left: 15px; margin-bottom: 0px; font-size: 12px; color: grey">Show Post : {{this.postAt}}</div>
+                    <div class="hide">Read more ....</div>
+                    <div class="durasi" style="margin-top: 0px; margin-left: 15px; margin-bottom: 0px; font-size: 12px; color: grey">Show Post : {{this.postAt}}</div>
                     <div class="deskripsi">
                         <p style="
                             margin-top: 20px; margin-left: 13px; margin-right: 50px; text-align: justify; font-size: 16px; font-family: 'Segoe UI';">
@@ -152,7 +150,7 @@
                     </div>
                     <div class="edit-dan-delete">
                         <div class="edit-satu">
-                            <a href="/update-myproject/{{@index}}" title="edit">
+                            <a href="/update-myproject/{{@index}}">
                                 <button type="button" class="btn btn-warning black">edit</button>
                             </a>
                         </div>
@@ -163,6 +161,7 @@
                         </div>
                     </div>
                 </div>
+                </a>
                 {{/each}}
             </div>
         </div>

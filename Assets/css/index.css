@@ -23,12 +23,13 @@ nav {
 }
 
 .navbar-top-left li {
-    display: inline; /* untuk menghilangkan tanda unordered listnya*/
+    display: inline;
+    /* untuk menghilangkan tanda unordered listnya*/
 }
 
 .navbar-top-left ul li a {
     text-decoration: none;
-    font-size: 20px; 
+    font-size: 20px;
     font-family: 'Segoe UI';
     color: black;
     background: rgb(255, 255, 255);
@@ -105,6 +106,7 @@ nav {
     margin-top: 20px;
     margin-left: 20px;
     color: black;
+    margin-bottom: 10px;
 }
 
 .my-project {
@@ -118,6 +120,7 @@ nav {
     font-family: 'Segoe UI';
     margin-right: 15px;
 }
+
 .text-orange {
     font-family: 'Segoe UI';
     font-size: 17px;
@@ -130,7 +133,7 @@ nav {
 }
 
 .bg-color {
-    background-color:black;
+    background-color: rgb(0, 0, 0);
     font-family: 'Segoe UI';
     border: none;
 }
@@ -160,8 +163,10 @@ nav {
 }
 
 .blog-detail-container-satu {
-    /* background-color: yellow; */
-    width: 380px; /*mengatur ukuran post blog agar tidak kelewat batas karena isi deskripsi atau yang lainnya*/
+    background-color: rgb(255, 255, 255);
+    color: black;
+    width: 380px;
+    /*mengatur ukuran post blog agar tidak kelewat batas karena isi deskripsi atau yang lainnya*/
     margin-bottom: 50px;
     margin-left: 52px;
     padding-bottom: 15px;
@@ -201,22 +206,63 @@ button {
 }
 
 #myBtn {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: red; /* Set a background color */
-    color: white; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 5px; /* Some padding */
-    border-radius: 5px; /* Rounded corners */
-    font-size: 15px; /* Increase font size */
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 20px;
+    /* Place the button at the bottom of the page */
+    right: 30px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: none;
+    /* Remove borders */
+    outline: none;
+    /* Remove outline */
+    background-color: orangered;
+    /* Set a background color */
+    color: white;
+    /* Text color */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    padding: 5px;
+    /* Some padding */
+    border-radius: 5px;
+    /* Rounded corners */
+    font-size: 15px;
+    /* Increase font size */
     width: 70px;
 }
 
-#myBtn:hover {
-    background-color:yellow; /* Add a dark-grey background on hover */
+/* #myBtn:hover {
+    background-color:yellow;
+} */
+
+.hide {
+    display: none;
+}
+
+.myDIV:hover+.hide {
+    margin-top: 0px;
+    margin-left: 14px;
+    display: block;
+    color: red;
+}
+
+.glow {
+    font-size: 60px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 0px rgb(0, 0, 0), 0 0 5px rgb(0, 0, 0), 0 0 15px orangered, 0 0 25px orangered, 0 0 35px orangered, 0 0 45px orangered, 0 0 55px orangered;
+    }
+
+    to {
+        text-shadow: 0 0 5px rgb(0, 0, 0), 0 0 15px orange, 0 0 25px orange, 0 0 35px orange, 0 0 45px orange, 0 0 55px orange, 0 0 65px orange;
+    }
 }
