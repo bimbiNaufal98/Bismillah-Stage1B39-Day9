@@ -69,7 +69,7 @@ app.get( '/', (request, response) => { //jadi ketika ada yang akses routing / in
 })
 
 app.get( '/myproject', (request, response) => {
-    // response.render ('myproject')
+    response.render ('myproject')
 })
 
 app.post( '/myproject', (request, response) => {
@@ -110,7 +110,7 @@ app.post( '/myproject', (request, response) => {
 
     // dataBlog.push(blog)
 
-    // response.redirect ('/') //supaya web browser tidak loading terus"an, maka kita kasih response.render atau inner.html menuju halaman index
+    response.redirect ('/') //supaya web browser tidak loading terus"an, maka kita kasih response.render atau inner.html menuju halaman index
 })
 
 app.get( '/update-myproject/:index', (request, response) => {
@@ -149,7 +149,7 @@ app.post( '/update-myproject/:index', (request, response) => {
 })
 
 app.get( '/contact', (request, response) => {
-    // response.render ('contact')
+    response.render ('contact')
 })
 
 app.get( '/myproject-detail/:index', (request, response) => { //:name ini bisa diisikan apa saja, karena menjadi penampung si paramsnya, maka nanti yang muncul di console.log nya adalah name : bimbi-naufal sesuai yang diisikan oleh user
