@@ -61,10 +61,6 @@ app.get( '/', (request, response) => { //jadi ketika ada yang akses routing / in
             response.render ('index', {dataBlog: dataBlog2}) // dataBlog: data adalah pemamnggilan utk let data diatas
         })
     })
-    // db.connect((err, client, done) => {
-    //     if (err) throw err
-    //     client.query()
-    // })
 
 })
 
