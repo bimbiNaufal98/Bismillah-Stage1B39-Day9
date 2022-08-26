@@ -346,7 +346,8 @@ button {
     display: grid;
     color: orangered;
     background: radial-gradient(farthest-side, currentColor calc(100% - 7px),#0000 calc(100% - 6px) 0);
-    -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 15px),#000 calc(100% - 13px));
+    mask: radial-gradient(farthest-side,#0000 calc(100% - 15px),#000 calc(100% - 13px));
+    /* -webkit-mask: aslinya seperti ini cuman error */
     border-radius: 50%;
     animation: spinner-sm4bhi 2s infinite linear;
 }
